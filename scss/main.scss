@@ -1,0 +1,55 @@
+/*** VARIABLES ***/
+
+@import './config';
+
+/*** RESET STYLES ***/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*** BASE STYLES ***/
+
+html {
+  scroll-behavior: smooth;
+  font-size: $base-font-size;
+}
+
+body {
+  font-family: $font-stack;
+  font-weight: 500;
+  line-height: 1.5;
+  background-color: $light-grayish-blue;
+}
+
+.container {
+  width: 100%;
+  max-width: 90rem;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+}
+
+/*** ATTRIBUTION ***/
+
+.attribution {
+  color: $dark-grayish-blue;
+  margin-bottom: 1.5rem;
+
+  &__text {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $moderate-violet;
+  }
+}
+
+/*** TESTIMONIALS GRID COMPONENT ***/
+
+@import './testimonial-grid-component';
